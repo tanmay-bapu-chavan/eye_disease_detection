@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Eye Disease Detection Model</title>
+</head>
+
+<body>
+    <header>
+        <h1>Eye Disease Detection Model</h1>
+    </header>
+    <br><br><br>
+    <div class="buttons-wrapper">
+        <label for="imageInput" class="custom-file-upload">Upload Eye Image</label>
+        <input type="file" id="imageInput" accept="image/*" style="display: none;" onchange="handleFileSelect(event)">
+        <button id="showResultsButton" onclick="processImage()">Show Results</button>
+    </div>
+    <br><br>
+    <div class="image-results-wrapper">
+        <div id="imageContainer" class="image-container"></div>
+        <div id="resultsBox" class="results-box">
+            <strong>Results</strong>
+            <div id="results"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
